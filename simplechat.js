@@ -132,7 +132,7 @@ if (Meteor.is_client) {
   });
 }
 
-if (Meteor.is_server) {
+if (Meteor.isServer) {
   function disableClientMongo() {
     _.each(['messages', 'users'], function(collection) {
       _.each(['insert', 'update', 'remove'], function(method) {
